@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Patients Details Form</title>
+
+    <style>
+        .lists {
+            color: blue;
+            background-color: lightyellow;
+        }
+
+        #table {
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        .format {
+            color: red;
+            font-size: 18px;
+        }
+
+        #format {
+            background-color: white;
+            padding: 5px;
+        }
+
+        /* CSS table properties */
+        table {
+            border-collapse: collapse;
+            width: 70%;
+            background-color: pink;
+            color: blue;
+        }
+
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        th {
+            text-align: center;
+            background-color: lightyellow;
+        }
+
+        td {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body style="background-color: pink; color: blue;">
+
+    <h1>Patients Details Form</h1>
+
+    <p class="lists" id="table">
+        Patient Registration Table
+    </p>
+
+    <p class="format" id="format">
+        Please fill in your personal details below.
+    </p>
+
+    <form action="" method="post" name="registration">
+
+        <table>
+
+            <tr>
+                <th colspan="2">Patient Registration</th>
+            </tr>
+
+            <tr>
+                <td>Username:</td>
+                <td>
+                    <input type="text" name="username"
+                    placeholder="Enter your name here"
+                    maxlength="30">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender"
+                    id="male" value="male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" name="gender"
+                    id="female" value="female">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Age:</td>
+                <td>
+                    <input type="number" id="age"
+                    name="age" min="1" max="120"
+                    placeholder="Enter your age">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Contact:</td>
+                <td>
+                    <input type="tel" name="phone"
+                    placeholder="071-234-5678">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Email:</td>
+                <td>
+                    <input type="email" name="email"
+                    placeholder="Enter your email here">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Describe your illness:</td>
+                <td>
+                    <textarea name="comments"
+                    cols="20" rows="5"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button type="submit">
+                        Submit Details
+                    </button>
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+</body>
+</html
